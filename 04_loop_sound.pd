@@ -1,4 +1,4 @@
-#N canvas 564 30 373 295 12;
+#N canvas 876 75 373 295 12;
 #N canvas 99 149 1059 729 loadsound 0;
 #X obj 96 138 soundfiler;
 #X floatatom 103 181 15 0 0 0 - - -;
@@ -19247,12 +19247,4 @@
 #X obj 73 58 tgl 100 0 loop rcv_loop empty 17 7 0 10 -260097 -4160
 -1 0 1;
 #X obj 232 60 vsl 40 95 -3 3 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
--4160 -1 2000 1;
-#X obj 242 70 vsl 40 95 -3 3 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
--4160 -1 2000 1;
-#X obj 252 80 vsl 40 95 -3 3 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
--4160 -1 2000 1;
-#X obj 262 90 vsl 40 95 -3 3 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
--4160 -1 2000 1;
-#X obj 272 100 vsl 40 95 -3 3 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
 -4160 -1 2000 1;

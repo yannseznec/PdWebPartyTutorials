@@ -54,3 +54,13 @@
 #X obj 101 170 hsl 200 40 0 127 0 1 filter_frequency rcv_filter_frequency
 empty -2 -8 0 10 -262144 -1 -1 7400 1;
 #X text 54 220 yannseznec.com // march 2021;
+#X obj 272 70 vsl 40 95 0 127 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
+-4160 -1 3000 1;
+#X obj 282 80 vsl 40 95 0 127 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
+-4160 -1 3000 1;
+#X obj 292 90 vsl 40 95 0 127 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
+-4160 -1 3000 1;
+#X obj 302 100 vsl 40 95 0 127 0 1 pitch rcv_pitch empty 0 -9 0 10
+-257985 -4160 -1 3000 1;
+#X obj 312 110 vsl 40 95 0 127 0 1 pitch rcv_pitch empty 0 -9 0 10
+-257985 -4160 -1 3000 1;
