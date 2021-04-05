@@ -1,0 +1,55 @@
+#N canvas 363 150 386 274 12;
+#X obj 51 19 cnv 15 300 200 canvas rcv_canvas complex_tone_&_volume_&_filter
+20 12 1 14 -233017 -66577 0;
+#X obj 83 59 tgl 100 0 on_off rcv_on_off empty 17 7 0 10 -260097 -4160
+-1 0 1;
+#X obj 196 61 vsl 40 95 0 1 0 1 volume rcv_volume empty 0 -9 0 10 -204800
+-4160 -1 6800 1;
+#N canvas 0 294 981 460 complex_tone 0;
+#X obj 185 115 r on_off;
+#X msg 183 163 \$1 50;
+#X obj 160 197 line~;
+#X obj 137 234 *~;
+#X obj 146 396 dac~;
+#X obj 146 365 *~;
+#X obj 533 211 r volume;
+#X msg 533 235 \$1 20;
+#X obj 532 274 line~;
+#X obj 89 186 phasor~;
+#X obj 90 55 r pitch;
+#X obj 348 226 loadbang;
+#X obj 269 162 r filter_frequency;
+#X obj 269 186 mtof;
+#X obj 88 90 mtof;
+#X msg 232 220 \$1 20;
+#X obj 231 259 line~;
+#X msg 100 117 \$1 20;
+#X obj 99 156 line~;
+#X msg 349 250 1;
+#X obj 151 309 vcf~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 1;
+#X connect 3 0 20 0;
+#X connect 5 0 4 0;
+#X connect 5 0 4 1;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 5 1;
+#X connect 9 0 3 0;
+#X connect 10 0 14 0;
+#X connect 11 0 19 0;
+#X connect 12 0 13 0;
+#X connect 13 0 15 0;
+#X connect 14 0 17 0;
+#X connect 15 0 16 0;
+#X connect 16 0 20 1;
+#X connect 17 0 18 0;
+#X connect 18 0 9 0;
+#X connect 19 0 20 2;
+#X connect 20 0 5 0;
+#X restore 99 242 pd complex_tone;
+#X obj 248 60 vsl 40 95 0 127 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
+-4160 -1 1900 1;
+#X obj 87 170 hsl 200 40 0 127 0 1 filter_frequency rcv_filter_frequency
+empty -2 -8 0 10 -262144 -1 -1 8100 1;
