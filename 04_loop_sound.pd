@@ -1,5 +1,5 @@
-#N canvas 604 260 373 295 12;
-#N canvas 99 149 1059 729 loadsound 0;
+#N canvas 315 61 373 295 12;
+#N canvas 476 23 1059 729 loadsound 1;
 #X obj 96 138 soundfiler;
 #X floatatom 103 181 15 0 0 0 - - -;
 #N canvas 0 22 450 278 (subpatch) 0;
@@ -19195,7 +19195,6 @@
 #X obj 114 306 r loop_frequency;
 #X obj 74 344 *;
 #X obj 57 279 r loop;
-#X floatatom 614 424 5 0 0 0 - - -;
 #X obj 249 308 r pitch;
 #X obj 100 397 *, f 7;
 #X obj 164 358 t b f;
@@ -19219,7 +19218,6 @@
 #X connect 20 0 22 0;
 #X connect 20 0 23 0;
 #X connect 22 0 24 0;
-#X connect 22 0 39 0;
 #X connect 25 0 30 0;
 #X connect 26 0 31 0;
 #X connect 28 0 25 0;
@@ -19233,12 +19231,12 @@
 #X connect 34 0 30 1;
 #X connect 35 0 28 0;
 #X connect 36 0 37 1;
-#X connect 37 0 41 0;
+#X connect 37 0 40 0;
 #X connect 38 0 37 0;
-#X connect 40 0 42 0;
-#X connect 41 0 35 0;
-#X connect 42 0 41 0;
-#X connect 42 1 41 1;
+#X connect 39 0 41 0;
+#X connect 40 0 35 0;
+#X connect 41 0 40 0;
+#X connect 41 1 40 1;
 #X restore 110 243 pd loadsound;
 #X obj 36 19 cnv 15 300 200 canvas rcv_canvas loop_sound 20 12 1 14
 -233017 -66577 0;

@@ -1,11 +1,11 @@
-#N canvas 575 226 386 274 12;
+#N canvas 563 23 392 280 12;
 #X obj 51 19 cnv 15 300 200 canvas rcv_canvas complex_tone_&_volume_&_filter
 20 12 1 14 -233017 -66577 0;
 #X obj 99 60 tgl 100 0 on_off_complex rcv_on_off_complex empty 17 7
 0 10 -260097 -4160 -1 0 1;
 #X obj 210 61 vsl 40 95 0 1 0 1 volume_complex rcv_volume_complex empty
 0 -9 0 10 -204800 -4160 -1 4300 1;
-#N canvas 0 294 981 460 complex_tone 0;
+#N canvas 368 285 1066 614 complex_tone 0;
 #X msg 183 163 \$1 50;
 #X obj 160 197 line~;
 #X obj 137 234 *~;
@@ -15,16 +15,16 @@
 #X obj 532 274 line~;
 #X obj 89 186 phasor~;
 #X obj 90 55 r pitch;
-#X obj 348 226 loadbang;
-#X obj 269 162 r filter_frequency;
-#X obj 269 186 mtof;
-#X obj 88 90 mtof;
+#X obj 346 216 loadbang;
+#X obj 253 153 r filter_frequency;
+#X obj 253 177 mtof;
+#X obj 93 81 mtof;
 #X msg 232 220 \$1 20;
 #X obj 231 259 line~;
 #X msg 100 117 \$1 20;
-#X obj 99 156 line~;
+#X obj 96 150 line~;
 #X msg 349 250 1;
-#X obj 151 309 vcf~;
+#X obj 151 309 vcf~, f 12;
 #X obj 185 115 r on_off_complex;
 #X obj 533 211 r volume_complex;
 #X connect 0 0 1 0;
@@ -50,7 +50,7 @@
 #X connect 20 0 5 0;
 #X restore 156 248 pd complex_tone;
 #X obj 262 60 vsl 40 95 0 127 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
--4160 -1 3000 1;
+-4160 -1 5800 1;
 #X obj 101 170 hsl 200 40 0 127 0 1 filter_frequency rcv_filter_frequency
-empty -2 -8 0 10 -262144 -1 -1 7400 1;
+empty -2 -8 0 10 -262144 -1 -1 10800 1;
 #X text 54 220 yannseznec.com // march 2021;
