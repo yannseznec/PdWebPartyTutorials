@@ -14,7 +14,7 @@
 #X obj 253 63 vsl 25 95 0 1 0 1 volume5 rcv_volume5 empty 0 -9 0 10
 -204800 -4160 -1 0 1;
 #X obj 283 62 vsl 25 95 0 1 0 1 volume6 rcv_volume6 empty 0 -9 0 10
--204800 -4160 -1 8500 1;
+-204800 -4160 -1 7400 1;
 #X obj 312 62 vsl 25 95 0 1 0 1 volume7 rcv_volume7 empty 0 -9 0 10
 -204800 -4160 -1 0 1;
 #X obj 342 63 vsl 25 95 0 1 0 1 volume8 rcv_volume8 empty 0 -9 0 10
@@ -6439,9 +6439,6 @@
 #X msg 729 169 2;
 #X obj 638 209 t b f;
 #X msg 611 167 0;
-#X obj 874 85 adc~;
-#X obj 860 221 tabwrite~ sound;
-#X msg 935 109 start;
 #X connect 1 0 14 0;
 #X connect 2 0 4 0;
 #X connect 2 0 141 0;
@@ -6594,8 +6591,6 @@
 #X connect 148 0 144 0;
 #X connect 148 1 144 1;
 #X connect 149 0 148 0;
-#X connect 150 0 151 0;
-#X connect 152 0 151 0;
 #X restore 133 236 pd loopsounds;
 #X obj 208 172 hradio 40 1 1 4 octave rcv_octave empty 0 -8 0 10 -228856
 -99865 -1 0;
