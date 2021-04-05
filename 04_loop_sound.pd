@@ -19248,3 +19248,11 @@
 -1 0 1;
 #X obj 232 60 vsl 40 95 -3 3 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
 -4160 -1 2000 1;
+#X obj 242 70 vsl 40 95 -3 3 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
+-4160 -1 2000 1;
+#X obj 252 80 vsl 40 95 -3 3 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
+-4160 -1 2000 1;
+#X obj 262 90 vsl 40 95 -3 3 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
+-4160 -1 2000 1;
+#X obj 272 100 vsl 40 95 -3 3 0 1 pitch rcv_pitch empty 0 -9 0 10 -257985
+-4160 -1 2000 1;
