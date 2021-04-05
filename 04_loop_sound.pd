@@ -19240,7 +19240,7 @@
 #X connect 42 0 41 0;
 #X connect 42 1 41 1;
 #X restore 110 243 pd loadsound;
-#X obj 36 19 cnv 15 300 200 canvas rcv_canvas load_sound 20 12 1 14
+#X obj 36 19 cnv 15 300 200 canvas rcv_canvas loop_sound 20 12 1 14
 -233017 -66577 0;
 #X obj 181 61 vsl 40 95 0 1 0 1 volume rcv_volume empty 0 -9 0 10 -204800
 -4160 -1 9400 1;

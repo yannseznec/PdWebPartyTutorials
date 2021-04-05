@@ -1,5 +1,5 @@
-#N canvas 181 26 450 300 12;
-#N canvas 99 149 1059 729 loadsound 1;
+#N canvas 623 200 450 300 12;
+#N canvas 99 149 1059 729 loadsound 0;
 #X obj 96 138 soundfiler;
 #X floatatom 103 181 15 0 0 0 - - -;
 #N canvas 0 22 450 278 (subpatch) 0;
@@ -19240,7 +19240,8 @@
 #X restore 110 243 pd loadsound;
 #X obj 36 19 cnv 15 300 200 canvas rcv_canvas load_sound 20 12 1 14
 -233017 -66577 0;
-#X obj 181 61 vsl 40 95 0 1 0 1 volume rcv_volume empty 0 -9 0 10 -204800
+#X obj 224 72 vsl 40 95 0 1 0 1 volume rcv_volume empty 0 -9 0 10 -204800
 -4160 -1 9400 1;
-#X obj 75 59 bng 100 250 50 0 play_bang rcv_play_bang empty 17 7 0
+#X obj 118 70 bng 100 250 50 0 play_bang rcv_play_bang empty 17 7 0
 10 -260097 -1 -1;
+#X text 80 221 yannseznec.com // march 2021;
