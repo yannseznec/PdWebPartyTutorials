@@ -1,4 +1,4 @@
-#N canvas 383 146 566 284 12;
+#N canvas 444 220 566 284 12;
 #X obj 36 19 cnv 15 500 200 canvas rcv_canvas bad_mellotron 20 12 1
 14 -233017 -66577 0;
 #X obj 106 63 vsl 25 95 0 1 0 1 volume0 rcv_volume0 empty 0 -9 0 10

@@ -1,0 +1,20 @@
+#N canvas 575 326 668 308 12;
+#X obj 221 27 adc~;
+#X obj 242 251 dac~;
+#X obj 270 72 delwrite~ delay 1000;
+#X obj 296 131 delread~ delay 200;
+#X obj 442 130 delread~ delay 205;
+#X obj 291 184 *~ 0.6;
+#X obj 429 181 *~ 0.6;
+#X obj 361 165 *~ 0.4;
+#X obj 63 61 bng 100 250 50 0 start start_rcv empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 0 0 2 0;
+#X connect 3 0 5 0;
+#X connect 3 0 7 0;
+#X connect 4 0 6 0;
+#X connect 5 0 1 0;
+#X connect 6 0 1 1;
+#X connect 7 0 2 0;
