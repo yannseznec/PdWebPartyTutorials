@@ -34757,8 +34757,6 @@
 #X connect 41 0 25 0;
 #X connect 42 0 39 0;
 #X restore 122 194 pd loadsound;
-#X obj 128 58 tgl 60 0 playstop rcv_playstop empty 17 7 0 10 -262130
--1 -1 0 1;
 #N canvas 515 23 450 300 playsound 0;
 #X obj 182 83 key;
 #X floatatom 182 107 5 0 0 0 - - -;
@@ -34782,6 +34780,9 @@
 #X connect 9 0 8 0;
 #X connect 9 0 10 0;
 #X restore 254 126 pd playsound;
+#X obj 98 17 cnv 15 100 60 canvas canvas_rcv pressing_letter_b_should_play_sound
+20 12 0 14 -262144 -66577 0;
+#X obj 128 58 tgl 60 0 playstop rcv_playstop empty 17 7 0 10 -262130
+-1 -1 0 1;
 #X obj 200 50 vsl 40 95 0 1 0 1 volume rcv_volume empty 0 -9 0 10 -204800
 -4160 -1 9400 1;
-#X text 103 14 pressing letter b should play the sound?;
