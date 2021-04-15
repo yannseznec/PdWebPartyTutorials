@@ -1,4 +1,4 @@
-#N canvas -1855 -400 1580 1230 12;
+#N canvas -1855 -400 1096 268 12;
 #X obj 603 315 adc~;
 #X obj 602 361 sigmund~;
 #X floatatom 591 415 5 0 0 0 - - -;
@@ -73,8 +73,8 @@
 #X obj 785 500 r main;
 #X obj 465 517 r up1;
 #X obj 916 944 r down1;
-#X obj 193 30 cnv 15 800 200 empty empty empty 20 12 0 14 -233017 -66577
-0;
+#X obj 193 30 cnv 15 800 200 canvas rcv_canvas empty 20 12 0 14 -233017
+-66577 0;
 #X obj 564 119 tgl 50 1 main main_rcv main 17 7 0 10 -204800 -1 -1
 0 1;
 #X obj 626 119 tgl 50 0 up05 up05_rcv up0.5 17 7 0 10 -232576 -1 -1
