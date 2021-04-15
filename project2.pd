@@ -146,6 +146,7 @@
 #X text 524 39 harmonize with yourself!;
 #X text 463 58 activate the triggers to turn voices on/off;
 #X text 490 205 (note: works best with headphones!);
+#X text 828 186 new version;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 1 3 0;
